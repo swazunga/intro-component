@@ -12,6 +12,7 @@
   background-color: var(--Red);
   height: 40vw;
   width: 70vw;
+  background-image: url("/intro-component/assets/images/bg-intro-desktop.png");
 }
 
 h1 {
@@ -52,6 +53,14 @@ input {
   border-color: var(--GrayishBlue);
   border-style: solid;
   border-radius: 5px;
+}
+
+input:invalid {
+  border-color: var(--Red);
+}
+
+.inputInvalid {
+  border-color: var(--Red);
 }
 
 .claimBtnDiv {
