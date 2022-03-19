@@ -4,7 +4,6 @@ var first = document.querySelector(".first");
 var last = document.querySelector(".last");
 var email = document.querySelector(".email");
 var password = document.querySelector(".password");
-var error = document.querySelector(".error");
 entry = JSON.parse(localStorage.getItem("entries")) || [];
 
 function submitForm(event) {
@@ -18,6 +17,7 @@ function submitForm(event) {
 
   if (!first.value) {
     first.classList.add("inputInvalid");
+    var error = document.querySelector(".error");
     var mySvg = document.createElementNS("http://www.w3.org/2000/svg", "error");
     mySvg.setAttribute("version", "1.1");
     first.value = mySvg;
